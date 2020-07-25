@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+body{ font-size: 13px; color: #000; font-family:'Open Sans', sans-serif;}
+
+*{ margin: 0; padding: 0; box-sizing:border-box; }
+.clear { clear:both; }
+.main { overflow: hidden; }
+.container { max-width: 1300px; margin: 0px auto; position: relative; }
+.banner{width: 100%;position:relative;height: 100vh;background: #072e30 url(../images/banner.jpg) left top no-repeat;}
+
+/*Header */
+.head{background-color:#00b09c;width: 100%; overflow:hidden;  z-index: 1;}
+.head .logo{ margin-top: 5px; float:left; font-size: 40px; color: #fff; text-decoration: none; }
+.head.homeHeader {position: absolute;left: 0px; top: 0px;}
+
+/*Manu */
+.menu{ float:right;}
+.menu ul{ } 
+.menu ul li {display:inline-block;list-style:none;}
+.menu ul li a{text-decoration:none;color: #fff;display:block;font-size:20px; padding: 20px; }
+.menu ul li a:hover, .menu ul li a.active{color: yellow; transition: 0.50s;display:block;background:#00554c;}
+
+.myinformation { position: absolute; left: 0px; top: 50%; width:100%; transform:translatey(-50%);}
+.content h3{text-transform: uppercase;color:#fff;font-size:40px;}
+.content a{text-decoration:none;font-size: 20px; color:white;border:1px solid #fff;padding:20px;margin:5px;border-radius:5px;background-color:rgb(37, 23, 13) ;}
+.content a:hover{color: yellow; transition: 0.50s;background:black;}
+
+/*footer */
+.footer{ width:100%; z-index: 1; text-align: center; background:rgba(0,0,0,0.5); padding: 15px; color: #fff; }
+.homefooter { position: absolute; left: 0px; bottom: 0px;}
+
+/*About us */
+.aboutUs { padding: 40px 0; width: 100%; overflow: hidden; }
+.aboutUs .left { padding-right: 40px; width: 60%; float: left; }
+.aboutUs .right { width: 40%; float: left; } 
+.aboutUs h2 { padding-bottom: 40px; text-align: center;  color: #000; font-size: 43px;  letter-spacing: 2px;    text-transform: uppercase;}
+.aboutUs h3 { padding-bottom: 30px; font-size: 28px; }
+.aboutUs p { padding-bottom: 30px; font-size: 15px; line-height: 25px; }
+.aboutUs .link {border: 2px solid #00b09c;  padding: 13px 20px; border-radius: 3px; text-decoration: none;  color: #333; font-weight: 700; font-size: 15px;}
+.aboutUs .link:hover { background:#00b09c; color: #fff; }
+
+/*Progress bar*/
+.single_progress {    margin: 5px;}
+.label { display: flex; justify-content: space-between; font-size: 16px;    margin: 5px 0 3px 0;}
+.progress { display: flex; height: 15px; background-color: #e9ecef; border-radius: 2px;}
+.progress-bar { background-color: #007bff;  transition: width .6s ease;}
+
+
+.projectRow { width: 100%; overflow: hidden; background: #f6f6f6; margin-bottom: 40px; border-radius: 6px;
+    padding: 23px; }
+.projectRow .image { width:40%; padding:0 0 0 30px; float: right; }
+.projectRow .image img { width: 100%; }
+.projectRow:nth-child(odd) .image{ padding:0 30px 0 0px;  float: left; }
+
+.contctform { width: 100%; overflow: hidden; }
+.contctform fieldset { border: none; }
+.contctform label { font-size: 15px; padding: 10px 0; display: block; }
+.contctform input[type="text"], textarea { width: 100%; border: 1px solid #ccc; padding: 12px 20px; resize: none; }
+.contctform .button { margin-top: 15px; border: 2px solid #00b09c;  padding: 13px 20px; border-radius: 3px; text-decoration: none;  color: #fff; font-weight: 700; font-size: 15px; background: #00b09c; cursor:pointer; }
+.contctform .button:hover { background:#000; color: #fff; }
